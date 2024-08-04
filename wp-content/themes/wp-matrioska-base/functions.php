@@ -2,6 +2,9 @@
 function meu_tema_setup() {
     // Suporte para imagens destacadas
     add_theme_support('post-thumbnails');
+
+    // Suporte para título dinâmico
+    add_theme_support('title-tag');
     
     // Registrar menu de navegação
     register_nav_menus(array(
@@ -29,3 +32,4 @@ function wp_matrioska_base_custom_logo_setup() {
   ));
 }
 add_action('after_setup_theme', 'wp_matrioska_base_custom_logo_setup');
+

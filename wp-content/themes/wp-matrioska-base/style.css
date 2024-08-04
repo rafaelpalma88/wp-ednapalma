@@ -22,14 +22,23 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1180px; /* Define a largura máxima do site */
+  margin-left: auto; /* Centraliza o container horizontalmente */
+  margin-right: auto; /* Centraliza o container horizontalmente */
+  padding-left: 15px; /* Adiciona espaçamento interno à esquerda */
+  padding-right: 15px; /* Adiciona espaçamento interno à direita */
+}
+
 /* Cabeçalho */
 .site-header {
-  background-color: #333; /* Cor de fundo do cabeçalho */
-  color: #fff; /* Cor do texto */
-  padding: 20px;
+  background-color: #fff; /* Cor de fundo do cabeçalho */
+  color: black; /* Cor do texto */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .site-branding {
@@ -38,12 +47,13 @@ body {
 
 .site-branding a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-size: 24px;
 }
 
 .main-navigation {
   flex: 2;
+  padding-right: 2.5rem;
 }
 
 .main-navigation ul {
@@ -59,17 +69,30 @@ body {
 }
 
 .main-navigation a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: block; /* O link cobre toda a área do item */
+  padding: 10px 10px; /* Aumenta a área clicável */
+  border: 1px solid transparent; /* Borda transparente ao redor dos links */
 }
 
 .main-navigation a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #98669e;
 }
 
+.main-navigation li.current_page_item a {
+  color: #98669e;
+}
+
+/* .main-navigation li.current_page_item a {
+  color: lightgray;
+} */
+
 .custom-logo {
-  max-width: 400px; /* Largura máxima do logo */
+  max-width: 310px; /* Largura máxima do logo */
   height: auto; /* Mantém a proporção original da imagem */
 }
 
