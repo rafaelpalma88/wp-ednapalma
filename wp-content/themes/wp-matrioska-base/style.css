@@ -1,0 +1,81 @@
+/*
+Theme Name: Matrioska Base
+Theme URI: http://seudominio.com/
+Author: Rafael Costa Palma
+Author URI: http://seudominio.com/
+Description: Um tema personalizado para WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-matrioska-base
+*/
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Geral */
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão do site */
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+.site-header {
+  background-color: #333; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-branding {
+  flex: 1;
+}
+
+.site-branding a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.main-navigation {
+  flex: 2;
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-navigation li {
+  margin-left: 20px;
+}
+
+.main-navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.main-navigation a:hover {
+  text-decoration: underline;
+}
+
+.custom-logo {
+  max-width: 400px; /* Largura máxima do logo */
+  height: auto; /* Mantém a proporção original da imagem */
+}
+
+/* Estilização do logo em telas pequenas */
+@media screen and (max-width: 600px) {
+  .custom-logo {
+    max-width: 300px; /* Ajusta a largura máxima do logo para telas pequenas */
+  }
+}
