@@ -18,7 +18,12 @@ html {
 
 /* Geral */
 body {
-  font-family: Arial, sans-serif; /* Fonte padrão do site */
+  //font-family: Arial, sans-serif; /* Fonte padrão do site */
+  font-family: 'Nunito Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100, 'YTLC' 500;
   box-sizing: border-box;
 }
 
@@ -65,7 +70,9 @@ body {
 }
 
 .main-navigation li {
-  margin-left: 20px;
+  margin-left: 1rem;
+  font-weight: 800;
+  color: #212529;
 }
 
 .main-navigation a {

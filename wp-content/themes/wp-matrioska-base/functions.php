@@ -32,4 +32,3 @@ function wp_matrioska_base_custom_logo_setup() {
   ));
 }
 add_action('after_setup_theme', 'wp_matrioska_base_custom_logo_setup');
-
