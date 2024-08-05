@@ -4,16 +4,19 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main">
+    <main id="main" class="container site-main">
         <?php
         // Inicia o loop para exibir o conteúdo da página
         if (have_posts()) :
             while (have_posts()) : the_post();
         ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
-                    <h1 class="entry-title"><?php the_title(); ?></h1>
-                </header>
+
+                <?php if (!is_front_page()) : ?>
+                    <header class="entry-header">
+                        <h1 class="entry-title"><?php the_title(); ?></h1>
+                    </header>
+                <?php endif; ?>
                 
                 <div class="entry-content">
                     <?php
