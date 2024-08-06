@@ -32,6 +32,14 @@ function simple_carousel_shortcode($atts) {
     ?>
     <div class="simple-carousel">
         <?php foreach ($images as $image) : ?>
+            <div class="carousel-wrapper">
+              <div class="carousel-image-title">
+                <span>Viver bem</span>
+              </div>
+              <div class="carousel-image-description">
+                <span>Terapia é um investimento na sua qualidade de vida</span>  
+              </div>
+            </div>
             <div class="carousel-slide">
                 <img src="<?php echo esc_url(trim($image)); ?>" alt="Carousel Image">
             </div>

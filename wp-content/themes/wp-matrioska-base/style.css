@@ -83,15 +83,18 @@ body {
   display: block; /* O link cobre toda a área do item */
   padding: 10px 10px; /* Aumenta a área clicável */
   border: 1px solid transparent; /* Borda transparente ao redor dos links */
+  border-bottom: 3px solid transparent;
 }
 
 .main-navigation a:hover {
   text-decoration: none;
   color: #98669e;
+  border-bottom: 3px solid #98669e;
 }
 
 .main-navigation li.current_page_item a {
   color: #98669e;
+  border-bottom: 3px solid #98669e;
 }
 
 /* .main-navigation li.current_page_item a {
@@ -108,4 +111,28 @@ body {
   .custom-logo {
     max-width: 300px; /* Ajusta a largura máxima do logo para telas pequenas */
   }
+}
+
+.list-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.box-single-post {
+  box-sizing: border-box;
+}
+
+.box-item-post {
+  flex: 1 1 33%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 33%;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: 200px; // 350x200
 }
